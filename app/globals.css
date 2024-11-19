@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components{
+  .movie-card{
+    @apply bg-blue-500 rounded-md h-64 w-64
+  }
+  .movie-list{
+    @apply grid-flow-col
+  }
+}
